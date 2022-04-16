@@ -86,7 +86,7 @@
       <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Invoice Extract in ML" sap:VirtualizedContainerService.HintSize="376,783.333333333333" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Invoice Extract in ML" sap:VirtualizedContainerService.HintSize="376,845.333333333333" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="p6:DocumentTaxonomy" Name="Taxonomy" />
       <Variable x:TypeArguments="x:String" Default="C:\Users\esaanmb\Documents\UiPath\Machine_Learning_Invoice_Extraction\Sample Invoice A.pdf" Name="strDocumentPath" />
@@ -198,7 +198,7 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </p1:ExportExtractionResults>
-    <ui:ForEach x:TypeArguments="sd1:DataTable" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="334,52.6666666666667" sap2010:WorkflowViewState.IdRef="ForEach`1_1" Values="[Output_DataSet.Tables]">
+    <ui:ForEach x:TypeArguments="sd1:DataTable" CurrentIndex="{x:Null}" sap2010:Annotation.AnnotationText="To change the DataSet into DataTable &#xD;&#xA;" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="334,114.666666666667" sap2010:WorkflowViewState.IdRef="ForEach`1_1" Values="[Output_DataSet.Tables]">
       <ui:ForEach.Body>
         <ActivityAction x:TypeArguments="sd1:DataTable">
           <ActivityAction.Argument>
@@ -218,6 +218,7 @@
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">False</x:Boolean>
           <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:ForEach>
